@@ -35,6 +35,8 @@ quiz_questions = [
     },
 ]
 
+num_correct = 0
+num_wrong = 0
 # Loop through each question
 for question in quiz_questions:
     # Display the question and options
@@ -47,9 +49,17 @@ for question in quiz_questions:
     
     # Check if the answer is correct
     if user_answer == question["answer"]:
+        num_correct += 1
         print("Correct!")
     else:
+        num_wrong += 1
         print(f"Wrong! The correct answer was {question['answer']}.")
+
+# Print score
+score = (num_correct/len(quiz_questions)) * 100
+print(f"You got {num_correct} questions correct!")
+print(f"You got {num_wrong} questions wrong")
+print(f"You scored {round(score)}%")
 
 # Goodbye message
 print("Thanks for playing the Pub Quiz!")
