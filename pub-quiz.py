@@ -13,8 +13,21 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "B"
     },
+     {
+        "question": "Who won the Euros in 2024?",
+        "options": ["A) France", "B) England", "C) Spain", "D) Germany"],
+        "answer": "C"
+    },
+            {
+        "question": "What is the missing letter from this yellow fruit - ban_na",
+        "options": ["Enter letter"],
+        "answer": "A"
+    },
     # Learners can add more questions here following the same structure
 ]
+
+# Add the user's score
+user_score = 0
 
 # Loop through each question
 for question in quiz_questions:
@@ -29,8 +42,13 @@ for question in quiz_questions:
     # Check if the answer is correct
     if user_answer == question["answer"]:
         print("Correct!")
+        user_score =+1
     else:
         print(f"Wrong! The correct answer was {question['answer']}.")
 
 # Goodbye message
 print("Thanks for playing the Pub Quiz!")
+
+# Display the final score
+print(f"Your total score: {user_score}/{len(quiz_questions)}")
+
