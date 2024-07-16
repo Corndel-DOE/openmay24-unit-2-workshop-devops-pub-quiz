@@ -1,4 +1,7 @@
 # Welcome message for the quiz
+import random
+
+
 print("Welcome to the Pub Quiz!")
 
 # List of questions, options, and answers
@@ -33,7 +36,14 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "D"
     },
+    {
+        "question": "What is the 3rd letter of the alphabet?",
+        "options": ["A) C", "B) D", "C) A", "D) B"],
+        "answer": "A"
+    },
 ]
+
+random.shuffle(quiz_questions)
 
 num_correct = 0
 num_wrong = 0
