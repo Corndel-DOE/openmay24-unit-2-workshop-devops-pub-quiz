@@ -41,6 +41,11 @@ quiz_questions = [
         "options": ["A) C", "B) D", "C) A", "D) B"],
         "answer": "A"
     },
+    {
+        "question": "What is the largest organ of the human body?",
+        "options": ["A) Brain", "B) Pancreas", "C) Heart", "D) Skin"],
+        "answer": "A"
+    },
 ]
 
 random.shuffle(quiz_questions)
