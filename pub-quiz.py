@@ -13,8 +13,21 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "B"
     },
+    {
+        "question": "Who won euro's 2024?",
+        "options": ["A) Spain", "B) England", "C) Germany", "D) Netherlands"],
+        "answer": "A"
+    },
+    {
+        "question": "When was the movie Titanic released?",
+        "options": ["A) 1982", "B) 1967", "C) 1997", "D) 1998"],
+        "answer": "C"
+    },
     # Learners can add more questions here following the same structure
 ]
+
+# Score Variable
+score = 0
 
 # Loop through each question
 for question in quiz_questions:
@@ -29,8 +42,18 @@ for question in quiz_questions:
     # Check if the answer is correct
     if user_answer == question["answer"]:
         print("Correct!")
+        score += 1
+
+    available_options = ["A", "B", "C", "D"]
+
+    for option in question["options"]:
+        available_options.append(option[0])
+
+    if user_answer not in available_options:
+        print (f"Incorrect option, please pick from A, B, C or D")
+
     else:
         print(f"Wrong! The correct answer was {question['answer']}.")
 
 # Goodbye message
-print("Thanks for playing the Pub Quiz!")
+print(f"Thanks for playing the Pub Quiz! Your final score is {score} out of {len(quiz_questions)}.")
