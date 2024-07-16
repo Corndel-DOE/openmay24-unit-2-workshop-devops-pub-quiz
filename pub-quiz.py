@@ -13,7 +13,26 @@ quiz_questions = [
         "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
         "answer": "B"
     },
-    # Learners can add more questions here following the same structure
+    {
+        "question": "What colour is the sky?",
+        "options": ["A) Green", "B) Yellow", "C) Blue", "D) The sky is communist propaganda"],
+        "answer": "C"
+    },
+    {
+        "question": "Which country won the Euros 2024 football championship?",
+        "options": ["A) England LOL", "B) Brazil", "C) Netherlands", "D) Spain"],
+        "answer": "D"
+    },
+    {
+        "question": "If Johnny has 87 watermelons, is he: ",
+        "options": ["A) Hungry", "B) Crazy", "C) Hydrated", "D) A collector"],
+        "answer": "B"
+    },
+    {
+        "question": "What is '2' + '2'?",
+        "options": ["A) 3", "B) 4", "C) 5", "D) 22"],
+        "answer": "D"
+    },
 ]
 
 # Loop through each question
